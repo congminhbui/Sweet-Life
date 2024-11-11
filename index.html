@@ -12,8 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <!-- Reusable styling -->
+    <link rel="stylesheet" href="css/frame.css" />
     <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -28,9 +31,9 @@
       </div>
       <nav class="nav-bar">
         <ul class="navlinks">
-          <li><a href="register.html">REGISTER</a></li>
-          <li><a href="order.html">ORDER</a></li>
-          <li><a href="features.html">FEATURES</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="features.html">Features</a></li>
         </ul>
       </nav>
     </header>
@@ -59,7 +62,7 @@
             />
           </div>
           <div class="info">
-            <h2>HISTORY</h2>
+            <h2>History</h2>
             <p>
               Started as a small family-owned cart in 2015, we began with a few
               flavors that reflected local tastes and ingredients. Today, our
@@ -74,58 +77,81 @@
       <div class="menu-container">
         <section class="menu">
           <div class="info">
-            <h2>OUR MENU</h2>
+            <h2>Our Menu</h2>
           </div>
           <div class="row">
             <div class="column">
-              <img src="images/chocoicecream.jpg" alt="Chocolate ice cream" />
+              <a href="order.html">
+                <img src="images/chocoicecream.jpg" alt="Chocolate ice cream" />
+              </a>
               <h3>Chocolate</h3>
               <p>Sweet and nutty</p>
-              <div class="info">
-                <a href="order.html">Order</a>
-              </div>
             </div>
 
             <div class="column">
-              <img
-                src="images/strawberryicecream.jpg"
-                alt="Strawberry ice cream"
-              />
+              <a href="order.html">
+                <img
+                  src="images/strawberryicecream.jpg"
+                  alt="Strawberry ice cream"
+                />
+              </a>
               <h3>Strawberry</h3>
               <p>Refreshing and delicious</p>
-              <div class="info">
-                <a href="order.html">Order</a>
-              </div>
             </div>
 
             <div class="column">
-              <img src="images/vanillaicecream.jpg" alt="Vanilla ice cream" />
+              <a href="order.html">
+                <img src="images/vanillaicecream.jpg" alt="Vanilla ice cream" />
+              </a>
               <h3>Vanilla</h3>
               <p>Basic with a twist</p>
-              <div class="info">
-                <a href="order.html">Order</a>
-              </div>
             </div>
           </div>
         </section>
       </div>
-    </main>
-    <footer>
-      <!-- Location footer -->
+      <!-- Location -->
       <div class="location-container">
+        <div class="text-content">
+          <h2>Our Location</h2>
+          <p>416 3rd Ave, New York, NY 10016</p>
+        </div>
+        <div class="map-container">
+          <!-- Embed Google Map iframe -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34101.64804018598!2d-74.01868962568358!3d40.743089100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25908576289ad%3A0xd2df784155e95b52!2sTasti%20D-Lite!5e1!3m2!1sen!2s!4v1730709395927!5m2!1sen!2s"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
         <div class="box">
           <div class="social">
-            <a href="https://facebook.com/minhbui.chup.film" target="”_blank”"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://instagram.com/_buifrin" target="”_blank”"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
             <a
-              href="https://youtube.com/c/Ng%E1%BB%8Dtband/videos"
-              target="”_blank”"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
+              href="https://facebook.com/minhbui.chup.film"
+              target="_blank"
+              aria-label="Visit Facebook page"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://instagram.com/_buifrin"
+              target="_blank"
+              aria-label="Visit Instagram profile"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@JPEGMAFIA/videos"
+              target="_blank"
+              aria-label="Visit YouTube channel"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
           </div>
           <div class="footer-nav">
             <ul>
@@ -147,12 +173,6 @@
             <p>Cong Minh Bui &copy; 2024</p>
           </div>
         </div>
-        <!-- <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34101.64804018598!2d-74.01868962568358!3d40.743089100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25908576289ad%3A0xd2df784155e95b52!2sTasti%20D-Lite!5e1!3m2!1sen!2s!4v1730709395927!5m2!1sen!2s"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe> -->
       </div>
     </footer>
   </body>

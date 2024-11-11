@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <!-- Icons for footer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/form.css" />
+    <!-- Reusable styling -->
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <a href="index.html" class="logo">sweet life</a>
+      <!-- Navbar -->
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul class="navlinks">
+          <li><a href="register.html">Register</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="features.html">Features</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="split-screen">
+        <div class="left-order">
+          <section class="copy">
+            <h1>SWEET LIFE</h1>
+            <p>Happiness by the scoop!</p>
+          </section>
+        </div>
+        <div class="right">
+          <form
+            action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php"
+            method="post"
+            id="orderform"
+          >
+            <section class="copy">
+              <h2>Order</h2>
+            </section>
+            <div class="select-box">
+              <label for="flavour">Choose your flavour</label><br />
+              <select name="flavour" id="flavour">
+                <option value="choco">Chocolate</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="vani">Vanilla</option>
+              </select>
+            </div>
+            <div class="radio">
+              <p>Shipping method</p>
+              <input
+                type="radio"
+                id="delivery"
+                name="takeout"
+                value="delivery"
+              />
+              <label for="delivery">Delivery</label>
+              <input type="radio" id="pickup" name="takeout" value="pickup" />
+              <label for="pickup">Pickup</label><br />
+            </div>
+            <div class="deliver-only">
+              <div class="input-container address">
+                <label for="address">Delivery address</label>
+                <input type="text" id="address" name="address" />
+              </div>
+            </div>
+            <div class="input-container billing">
+              <label for="billing">Billing address</label>
+              <input type="text" id="billing" name="billing" />
+              <div class="same">
+                <input type="checkbox" name="sameas" id="sameas" />
+                <label for="sameas">Same as delivery address</label>
+              </div>
+            </div>
+            <div class="input-container postcode">
+              <label for="postcode">Post code</label>
+              <input type="text" id="postcode" name="postcode" />
+            </div>
+            <div class="input-container contact">
+              <label for="contact">Contact number</label>
+              <input type="text" id="contact" name="contact" />
+            </div>
+            <div class="input-container email">
+              <label for="email">Email for recipt</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="radio">
+              <p>Payment method</p>
+              <input type="radio" id="pop" name="payment" value="pop" />
+              <label for="pop">Pay on pickup</label>
+              <input type="radio" id="onl" name="payment" value="onl" />
+              <label for="onl">Online</label><br />
+            </div>
+            <div class="onlinepayment">
+              <div class="radio">
+                <p>Types of credit card</p>
+                <input type="radio" id="visa" name="credit" value="visa" />
+                <label for="visa">Visa</label>
+                <input
+                  type="radio"
+                  id="mastercard"
+                  name="credit"
+                  value="mastercard"
+                />
+                <label for="mastercard">MasterCard</label>
+                <input type="radio" id="amex" name="credit" value="amex" />
+                <label for="amex">Amex</label><br />
+              </div>
+              <div class="input-container card-number">
+                <label for="card-number">Credit card number</label>
+                <input type="text" id="card-number" name="card-number" />
+              </div>
+            </div>
+            <input class="submit-btn" type="submit" value="Order" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="box">
+          <div class="social">
+            <a
+              href="https://facebook.com/minhbui.chup.film"
+              target="_blank"
+              aria-label="Visit Facebook page"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://instagram.com/_buifrin"
+              target="_blank"
+              aria-label="Visit Instagram profile"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@JPEGMAFIA/videos"
+              target="_blank"
+              aria-label="Visit YouTube channel"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="register.html">Register</a>
+              </li>
+              <li>
+                <a href="order.html">Order</a>
+              </li>
+              <li>
+                <a href="features.html">Features</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bot">
+            <p>Cong Minh Bui &copy; 2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

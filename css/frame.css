@@ -1,0 +1,192 @@
+/* Reusable styling */
+/* Importing Montserrat font from Google */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #f9f9f7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.9em 10%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.logo {
+  font-family: "Cookie", cursive;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 4rem;
+  color: #ee3900;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.navlinks li a {
+  transition: all 0.3s ease 0s;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.navlinks li a:hover {
+  color: #ee3900;
+}
+
+nav ul li a.active {
+  color: #ee3900;
+}
+
+footer {
+  background-color: #fde9e9;
+}
+
+.footer-container {
+  width: 100%;
+  padding-top: 1em;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  a {
+    color: #ee3900;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 1em;
+    transition: all 0.3s ease 0s;
+    i {
+      font-size: 2rem;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+
+.social a:hover {
+  background-color: #ee3900;
+  i {
+    color: white;
+  }
+}
+
+.footer-nav {
+  margin: 2em 0;
+  ul {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    li {
+      list-style-type: none;
+      a {
+        margin: 1em;
+        list-style-type: none;
+        font-size: 1em;
+        opacity: 0.7;
+        transition: all 0.3s ease 0s;
+        color: #333333;
+      }
+      a:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.footer-bot {
+  background-color: #d3c1c12d;
+  padding: 0.7em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #ee3900;
+    margin: 6px 0;
+  }
+
+  .nav-bar.active {
+    height: 227px;
+    ul li {
+      opacity: 1;
+    }
+  }
+
+  .nav-bar {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 0px;
+    background: #f9f9f7;
+    transition: all 0.3s ease 0s;
+    overflow: hidden;
+    ul li {
+      display: block;
+      width: fit-content;
+      margin: 38px auto 0 auto;
+      opacity: 0;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .footer-nav {
+    margin: 0;
+    ul {
+      flex-direction: column;
+      li {
+        margin-bottom: 1em;
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
