@@ -1,0 +1,161 @@
+main {
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 500;
+  a {
+    color: #233975;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.split-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Source: freepik
+   https://www.freepik.com/free-photo/medium-shot-girls-eating-ice-cream_13360164.htm
+*/
+.left-regis {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/register.jpg");
+}
+
+/* Source: ICE CREAM - Irine Popovich
+   https://www.behance.net/gallery/135823285/ICE-CREAM/modules/769250071
+*/
+.left-order {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/order.jpg");
+}
+
+.left-regis,
+.left-order {
+  height: 200px;
+  background-size: cover;
+  .copy {
+    color: white;
+    text-align: center;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.15rem;
+  }
+}
+
+.right {
+  .copy {
+    text-align: center;
+  }
+  form {
+    width: 328px;
+  }
+  margin-bottom: 1rem;
+}
+
+.left-regis,
+.left-order,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: solid 1px #c4c4c4;
+  padding: 0.5em;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+#billing {
+  margin-bottom: 0;
+}
+
+.input-container.contact,
+.input-container.postcode {
+  margin-top: 1rem;
+}
+
+.radio label {
+  margin-right: 0.5rem;
+}
+
+label,
+main p,
+.terms,
+select {
+  font-size: 1.15rem;
+}
+
+.radio,
+.select-box,
+.terms {
+  margin-bottom: 0.5rem;
+}
+
+.gender label {
+  margin-right: 0.5em;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background-color: #ee3900;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+}
+
+.submit-btn:hover {
+  background-color: #aa2800;
+  color: #d8d8d8;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .split-screen {
+    flex-direction: row;
+    height: 90vh;
+  }
+
+  .left-regis,
+  .left-order,
+  .right {
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 3.25rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
