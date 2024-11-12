@@ -26,14 +26,20 @@ h2 {
   flex-direction: column;
 }
 
+/* Source: freepik
+   https://www.freepik.com/free-photo/medium-shot-girls-eating-ice-cream_13360164.htm
+*/
 .left-regis {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/images/register.jpg");
+    url("../images/register.jpg");
 }
 
+/* Source: ICE CREAM - Irine Popovich
+   https://www.behance.net/gallery/135823285/ICE-CREAM/modules/769250071
+*/
 .left-order {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/images/order.jpg");
+    url("../images/order.jpg");
 }
 
 .left-regis,
@@ -80,10 +86,6 @@ form input[type="password"] {
   margin-bottom: 1rem;
   font-size: 0.875rem;
 }
-
-/* .deliver-only {
-  display: none;
-} */
 
 #billing {
   margin-bottom: 0;
